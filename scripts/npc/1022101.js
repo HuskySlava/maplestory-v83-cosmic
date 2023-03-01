@@ -24,6 +24,8 @@ Jan Christian Meyer <vimes@odinms.de>
  **/
 
 function start() {
-    cm.sendOk("I am an NPC without a status.");
-    cm.dispose();
+    setTimeout(function(){
+        cm.sendOk("I am an NPC without a status.");
+        cm.dispose();
+    }, 2000)
 }
